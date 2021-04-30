@@ -1,0 +1,76 @@
+:root {
+  --color-white: #ffffff;
+  --color-light: rgb(134, 132, 132);
+  --color-main-text: #5d626a;
+  --color-text-contacts: #757575;
+  --color-text-slogan: #212121;
+  --color-text-title: #b0b6bf;
+  --color-accent-dark: #002236;
+  --color-accent-dark-transparent: rgba(0, 34, 54, 0.5);
+  --color-accent-light: #2196f3;
+  --bgc-main: #f2f4f7;
+  --bgc-main-nav: rgba(0, 0, 0, 0.9);
+  --border-color: #b0b6bf;
+  --color-btn: #212121;
+  --bgc-btn: #f5f4fa;
+}
+
+%title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-title);
+}
+
+%main-nav {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  color: var(--color-white);
+}
+
+%slogan {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  color: var(--color-text-slogan);
+}
+
+%contacts {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  color: var(--color-text-contacts);
+}
+
+%main-fonts {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--color-main-text);
+}
+
+%fonts-hero {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+%btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--color-btn);
+}
