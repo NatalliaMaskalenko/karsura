@@ -1,7 +1,10 @@
 @import "./utils/variables";
 @import "./base/common";
 @import "./base/container";
+@import "./components/scrolling";
 @import "./components/main-nav";
+@import "./components/section";
+@import "./components/titlle";
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/general";
@@ -10,88 +13,3 @@
 @import "./layouts/advantages";
 @import "./layouts/price";
 @import "./layouts/footer";
-
-:root {
-  --color-white: #ffffff;
-  --color-light: rgb(134, 132, 132);
-  --color-main-text: #5d626a;
-  --color-text-contacts: #757575;
-  --color-text-slogan: #212121;
-  --color-text-title: #b0b6bf;
-  --color-accent-dark: #002236;
-  --color-accent-dark-transparent: rgba(0, 34, 54, 0.5);
-  --color-accent-light: #2196f3;
-  --bgc-main: #f2f4f7;
-  --bgc-main-nav: rgba(0, 0, 0, 0.9);
-  --border-color: #b0b6bf;
-  --color-btn: #212121;
-  --bgc-btn: #f5f4fa;
-}
-
-/* Услугия */
-.services {
-  background-color: var(--color-white);
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 90px;
-  padding-right: 90px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.title {
-  @extend %title;
-}
-
-.services__slogan {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.title::before {
-  content: "";
-  display: inline-block;
-
-  margin-right: 8px;
-  width: 50px;
-  height: 2px;
-  background-color: var(--color-text-title);
-}
-
-.services__wrap {
-  display: flex;
-  align-items: center;
-}
-
-.services__slogan {
-  flex-basis: calc((100% / 4) - 30px);
-}
-
-.services__content {
-  flex-basis: calc(100% / 4 * 3 - 30px);
-  margin-left: 30px;
-}
-
-.services__item {
-  display: flex;
-  justify-content: center;
-
-  font-size: 18px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--color-main-text);
-}
-
-.services__item::before {
-  content: "";
-  display: inline-block;
-  background-image: url(../images/services.svg);
-  width: 20px;
-  height: 20px;
-  margin-right: 15px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}

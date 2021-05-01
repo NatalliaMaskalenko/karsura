@@ -1,0 +1,24 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--color-accent-dark);
+}
+
+.container__footer {
+  display: flex;
+}
+
+.footer__title {
+  @extend %main-nav;
+  margin-bottom: 20px;
+}
+
+.contacts__footer {
+  margin-left: 150px;
+}
+
+.footer__text {
+  @extend %footer-fonts;
+  font-style: normal;
+  margin-bottom: none;
+}

@@ -12,9 +12,8 @@
 <symbol id="icon-Vector" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4923" d="M4.817 15.389l-0.169-0.162-2.544 2.41 8.962 8.55 18.829-17.962-2.527-2.411-16.302 15.536-6.249-5.962z"></path>
 </symbol>
-<symbol id="icon-check-square" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M12 14.667l4 4 13.333-13.333"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M28 16v9.333c0 1.473-1.194 2.667-2.667 2.667v0h-18.667c-1.473 0-2.667-1.194-2.667-2.667v0-18.667c0-1.473 1.194-2.667 2.667-2.667v0h14.667"></path>
+<symbol id="icon-iconmonstr-check-mark-18" viewBox="0 0 32 32">
+<path d="M32 8.371l-14.88 16.963-9.12-8 1.759-1.987 7.121 6.248 13.153-14.928 1.967 1.704zM1.759 15.347l9.113 8.013-1.752 1.973-9.12-8 1.759-1.987zM14.129 15.637l7.895-8.971 1.976 1.713-7.895 9.008-1.976-1.751z"></path>
 </symbol>
 <symbol id="icon-iconmonstr-arrow-17" viewBox="0 0 32 32">
 <path d="M21.333 10.667v-5.333l10.667 10.667-10.667 10.667v-5.333h-6.667v-10.667h6.667zM12 10.667h-2.667v10.667h2.667v-10.667zM6.648 10.667h-2.648v10.667h2.648v-10.667zM1.333 10.667h-1.333v10.667h1.333v-10.667z"></path>

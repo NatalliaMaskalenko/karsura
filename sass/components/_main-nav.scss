@@ -1,5 +1,9 @@
 .main-nav {
   background-color: var(--bgc-main-nav);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .main-nav__content {

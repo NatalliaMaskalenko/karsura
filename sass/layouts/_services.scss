@@ -1,0 +1,45 @@
+.services {
+  background-color: var(--color-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container__services {
+  display: flex;
+  justify-content: end;
+  padding-left: 90px;
+  padding-right: 90px;
+  background-color: var(--color-white);
+
+  border-radius: 4px;
+}
+
+.services__slogan {
+  @extend %slogan;
+}
+
+.services__wrap {
+  flex-basis: calc((100% - 90px) / 3);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.services__content {
+  flex-basis: calc((100% - 90px) / 3 * 2);
+  margin-left: 90px;
+  padding-left: 100px;
+}
+
+.services__item {
+  display: flex;
+  align-items: center;
+
+  color: var(--color-main-text);
+  // text-transform: uppercase;
+}
+
+.services__icon {
+  fill: var(--color-icon-accent);
+  margin-right: 20px;
+}

@@ -31,12 +31,12 @@
     display: inline-block;
     height: 3px;
     width: 100%;
-    background-color: var(--color-accent-dark-transparent);
+    background-color: var(--bgc-main-nav);
   }
 }
 
 .hero__text {
-  color: var(--color-accent-dark-transparent);
+  color: var(--bgc-main-nav);
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 400;
