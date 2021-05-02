@@ -6,7 +6,7 @@
   --color-text-contacts: #757575;
   --color-text-slogan: #212121;
   --color-text-title: #b0b6bf;
-  --color-accent-dark: #002236;
+  --color-accent-dark: #081729;
   --color-accent-dark-transparent: rgba(0, 34, 54, 0.5);
   --color-accent-light: #2196f3;
   --color-icon-accent: rgba(33, 149, 243, 0.671);
@@ -54,7 +54,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.05em;
+  letter-spacing: 0em;
   color: var(--color-text-footer);
 }
 
@@ -436,7 +436,7 @@ a {
 .container__footer {
   display: flex;
   justify-content: space-around;
-  padding: 100px 90px 100px 90px;
+  padding: 80px 90px 80px 90px;
 }
 
 .footer__title {
@@ -459,7 +459,11 @@ a {
 
 .footer__text {
   font-style: normal;
-  margin-bottom: none;
+  margin-bottom: 0;
+}
+
+.adress__link--footer {
+  margin-bottom: 20px;
 }
 
 .contacts__link--footer:hover,
@@ -467,5 +471,23 @@ a {
 .adress__link--footer:hover,
 .adress__link--footer:focus {
   color: var(--color-icon-accent);
+}
+
+.copyright::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-text-footer);
+}
+
+.impressum {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  color: var(--color-text-footer);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.05em;
 }
 /*# sourceMappingURL=mein.css.map */
