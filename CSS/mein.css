@@ -12,9 +12,6 @@
   --color-icon-accent: rgba(33, 149, 243, 0.671);
   --bgc-main: #f2f4f7;
   --bgc-main-nav: rgba(0, 0, 0, 0.9);
-  --border-color: #b0b6bf;
-  --color-btn: #212121;
-  --bgc-btn: #f5f4fa;
 }
 
 .title {
@@ -55,10 +52,10 @@
 .footer__text {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: var(--color-main-text);
+  letter-spacing: 0.05em;
+  color: var(--color-text-footer);
 }
 
 .main__title {
@@ -71,7 +68,7 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -131,25 +128,23 @@ a {
 }
 
 .scrolling__link {
-  display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed/sticky position */
-  bottom: 5px;
-  /* Place the button at the bottom of the page */
-  right: 50px;
-  /* Place the button 30px from the right */
-  z-index: 99;
-  /* Make sure it does not overlap */
-  outline: none;
-  /* Remove outline */
+  right: 30px;
+  bottom: 50px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-size: contain;
   cursor: pointer;
 }
 
 .scrolling__icon {
   fill: var(--color-icon-accent);
   border-radius: 50%;
-  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .scrolling__link {
@@ -215,6 +210,17 @@ a {
   width: 50px;
   height: 1px;
   background-color: var(--color-text-title);
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--color-text-footer);
 }
 
 .contacts__wrap {
@@ -308,13 +314,16 @@ a {
 }
 
 .general__text {
+  margin-bottom: 0;
   text-indent: 25px;
   text-align: justify;
 }
 
 .services {
   background-color: var(--color-white);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   width: 1200px;
   margin: 0 auto;
 }
@@ -359,7 +368,9 @@ a {
 
 .advantages {
   background-color: var(--color-white);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   width: 1200px;
   margin: 0 auto;
 }
@@ -384,7 +395,7 @@ a {
   margin-right: 20px;
 }
 
-.conteiner__price {
+.container__price {
   padding-right: 90px;
   padding-left: 90px;
   text-align: justify;
@@ -419,17 +430,27 @@ a {
 }
 
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-color: var(--color-accent-dark);
 }
 
 .container__footer {
   display: flex;
+  justify-content: space-around;
+  padding: 100px 90px 100px 90px;
 }
 
 .footer__title {
   margin-bottom: 20px;
+  color: var(--bgc-main);
+}
+
+.footer__title::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--color-text-footer);
 }
 
 .contacts__footer {
@@ -439,5 +460,12 @@ a {
 .footer__text {
   font-style: normal;
   margin-bottom: none;
+}
+
+.contacts__link--footer:hover,
+.contacts__link--footer:focus,
+.adress__link--footer:hover,
+.adress__link--footer:focus {
+  color: var(--color-icon-accent);
 }
 /*# sourceMappingURL=mein.css.map */

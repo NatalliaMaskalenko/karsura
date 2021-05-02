@@ -12,9 +12,6 @@
   --color-icon-accent: rgba(33, 149, 243, 0.671);
   --bgc-main: #f2f4f7;
   --bgc-main-nav: rgba(0, 0, 0, 0.9);
-  --border-color: #b0b6bf;
-  --color-btn: #212121;
-  --bgc-btn: #f5f4fa;
 }
 
 %title {
@@ -64,10 +61,10 @@
 %footer-fonts {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: var(--color-main-text);
+  letter-spacing: 0.05em;
+  color: var(--color-text-footer);
 }
 
 %fonts-hero {

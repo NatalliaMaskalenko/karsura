@@ -1,6 +1,10 @@
 .services {
   background-color: var(--color-white);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   width: 1200px;
   margin: 0 auto;
 }
