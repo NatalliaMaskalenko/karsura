@@ -13,6 +13,7 @@
   @extend %main-nav;
   margin-bottom: 20px;
   color: var(--bgc-main);
+  text-align: center;
 
   &::after {
     content: "";

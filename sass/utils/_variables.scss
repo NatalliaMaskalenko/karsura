@@ -1,17 +1,17 @@
 :root {
   --color-white: #ffffff;
-  --color-text-footer: rgba(255, 255, 255, 0.3);
+  --color-text-footer: #99b9d8;
   --color-light: rgb(134, 132, 132);
-  --color-main-text: #5d626a;
-  --color-text-contacts: #757575;
-  --color-text-slogan: #212121;
-  --color-text-title: #b0b6bf;
-  --color-accent-dark: #081729;
+  --color-main-text: #1f2c37;
+  --color-text-contacts: #467b9b;
+  --color-text-slogan: #001623;
+  --color-text-title: #467b9b;
+  --color-accent-dark: #002236;
   --color-accent-dark-transparent: rgba(0, 34, 54, 0.5);
   --color-accent-light: #2196f3;
-  --color-icon-accent: rgba(33, 149, 243, 0.671);
-  --bgc-main: #f2f4f7;
-  --bgc-main-nav: rgba(0, 0, 0, 0.9);
+  --color-icon-accent: #2196f3;
+  --bgc-main: #e5edf5;
+  --bgc-main-nav: #001623;
 }
 
 %title {

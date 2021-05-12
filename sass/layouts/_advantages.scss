@@ -24,15 +24,17 @@
 }
 
 .advantages__content {
-  padding-left: 100px;
+  // padding-left: 90px;
 }
 
 .advantages__item {
+  display: flex;
+  align-items: flex-start;
   color: var(--color-main-text);
-  // text-transform: uppercase;
 }
 
 .advantages__icon {
   fill: var(--color-icon-accent);
+  margin-top: 10px;
   margin-right: 20px;
 }

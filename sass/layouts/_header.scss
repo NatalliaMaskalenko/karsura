@@ -28,6 +28,7 @@
   fill: var(--color-text-contacts);
   stroke-width: 2px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 5px;
 
   .contacts__item--header:hover &,
   .contacts__item--header:focus & {
@@ -36,9 +37,10 @@
 }
 
 .contacts__link--header {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color-text-contacts);
-  margin-left: 5px;
   @extend %contacts;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
