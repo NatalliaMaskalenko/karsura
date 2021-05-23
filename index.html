@@ -19,9 +19,67 @@
 
   <body>
     <header>
-      <nav class="main-nav">
+      <div class="header-nav--mobile">
+        <div class="container container-mobile--header">
+          <button class="main-nav__btn" data-menu-button>
+            <svg class="main-nav__icon" width="25" height="25">
+              <use
+                class="icon__menu--header"
+                href="./images/icon-contacts/icons.svg#icon-menu_24px"
+              ></use>
+            </svg>
+
+            <svg class="main-nav__icon" width="15" height="15">
+              <use
+                class="icon__close--header"
+                href="./images/icon-contacts/icons.svg#icon-close_24px"
+              ></use>
+            </svg>
+          </button>
+
+          <ul class="list contacts--header contacts--mobile">
+            <li class="contacts__item--header contacts__item--mobile">
+              <a
+                class="contacts__link--header contacts__link--mobile"
+                href="mailto:kv-autoglas@gmx.de"
+              >
+                <svg
+                  class="contacts__icon contacts__icon--mobile"
+                  width="13"
+                  height="13"
+                >
+                  <use
+                    href="./images/icon-contacts/icons.svg#icon-iconmonstr-email-4"
+                  ></use>
+                </svg>
+                kv-autoglas@gmx.de</a
+              >
+            </li>
+
+            <li class="contacts__item--header contacts__item--mobile">
+              <a
+                class="contacts__link--header contacts__link--mobile"
+                href="tel:017662677924"
+              >
+                <svg
+                  class="contacts__icon contacts__icon--mobile"
+                  width="15"
+                  height="15"
+                >
+                  <use
+                    href="./images/icon-contacts/icons.svg#icon-phone-black-18dp-1"
+                  ></use>
+                </svg>
+                0176 - 62 67 79 24</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <nav class="main-nav">
         <div class="container">
-          <ul class="list main-nav__content">
+          <ul class="list main-nav__content desktop">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#services">Leistungen</a>
             </li>
@@ -39,9 +97,9 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
 
-      <div class="contacts__wrap" id="header">
+      <!-- <div class="contacts__wrap" id="header">
         <div class="container container__contacts">
           <a class="logo" href="./index.html"
             ><img
@@ -76,10 +134,29 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </header>
-    <main>
-      <section class="hero">
+    <div class="mobile__menu" data-menu>
+      <ul class="list main-nav__content">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#services">Leistungen</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#about">Über uns </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#advantages">Vorteile</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#price">Versicherungsschutz</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#contacts">Kontakte</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <main>
+     <section class="hero">
         <div class="container">
           <div class="hero__container">
             <h1 class="main__title">
@@ -93,9 +170,9 @@
             </p>
           </div>
         </div>
-      </section>
-      <!-- Общая информация -->
-      <section class="section general">
+      </section> -->
+    <!-- Общая информация -->
+    <!-- <section class="section general">
         <div class="container container__general">
           <h2 class="visually-hidden">общая информация</h2>
           <p class="general__slogan visually-hidden">
@@ -116,9 +193,9 @@
             als 10 cm vom Scheibenrand entfernt ist.
           </p>
         </div>
-      </section>
-      <!--Услугия  -->
-      <section class="section services" id="services">
+      </section> -->
+    <!--Услугия  -->
+    <!-- <section class="section services" id="services">
         <div class="container container__services">
           <div class="services__wrap">
             <h2 class="title">Leistungen</h2>
@@ -177,9 +254,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- О компании -->
-      <section class="section about" id="about">
+      </section> -->
+    <!-- О компании -->
+    <!-- <section class="section about" id="about">
         <div class="container container__about">
           <h2 class="title">Über uns</h2>
           <p class="about__text">
@@ -191,9 +268,9 @@
             bei der Arbeit
           </p>
         </div>
-      </section>
-      <!-- Приемущества -->
-      <section class="section advantages" id="advantages">
+      </section> -->
+    <!-- Приемущества -->
+    <!-- <section class="section advantages" id="advantages">
         <div class="container container__advantages">
           <h2 class="title">Vorteile</h2>
           <p class="advantages__slogan">Alle Vorteile auf einen Blick!</p>
@@ -247,9 +324,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- Страховка/Стоимость -->
-      <section class="section price" id="price">
+      </section> -->
+    <!-- Страховка/Стоимость -->
+    <!-- <section class="section price" id="price">
         <div class="container container__price">
           <h2 class="title">Versicherungsschutz</h2>
           <p class="price__text">
@@ -347,6 +424,8 @@
           Katsura.Rechtsform: Einzelunternehmen
         </p>
       </div>
-    </footer>
+    </footer> -->
+
+    <script src="./main.js"></script>
   </body>
 </html>

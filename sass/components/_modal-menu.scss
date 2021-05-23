@@ -1,0 +1,34 @@
+.mobile__menu {
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100vh;
+  padding: 48px 40px 48px 40px;
+
+  background-color: var(--bgc-main-nav);
+  transition: right 300ms;
+
+  &.is-open {
+    left: 0;
+  }
+}
+
+.icon__close--header {
+  display: none;
+}
+
+.is-open {
+  .icon__close--header {
+    display: block;
+  }
+
+  .icon__menu--header {
+    display: none;
+  }
+}
