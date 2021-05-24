@@ -1,5 +1,12 @@
 .container__about {
-  padding-right: 90px;
-  padding-left: 90px;
   text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+}
+
+.about__text {
+  margin-bottom: 0;
 }

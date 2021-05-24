@@ -16,7 +16,6 @@
 
 .title {
   font-weight: 400;
-  font-size: 12px;
   line-height: 1.1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -32,7 +31,6 @@
 .services__slogan, .advantages__slogan {
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
   line-height: 1.1;
   color: var(--color-text-slogan);
 }
@@ -57,7 +55,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 2;
   letter-spacing: 0.03em;
   background-color: var(--bgc-main);
   color: var(--color-main-text);
@@ -66,7 +64,6 @@ body {
 @media screen and (min-width: 768px) {
   body {
     font-size: 20px;
-    line-height: 2;
     letter-spacing: 0.03em;
   }
 }
@@ -74,7 +71,6 @@ body {
 @media screen and (min-width: 1280px) {
   body {
     font-size: 20px;
-    line-height: 2;
     letter-spacing: 0.03em;
   }
 }
@@ -172,7 +168,7 @@ a {
 
 .mobile-menu {
   position: absolute;
-  z-index: 50;
+  z-index: 300;
   top: 0;
   left: 0;
   width: 100%;
@@ -232,6 +228,7 @@ a {
 .main-nav {
   background-color: var(--bgc-main-nav);
   position: fixed;
+  z-index: 200;
   top: 0;
   left: 0;
   width: 100%;
@@ -300,14 +297,14 @@ a {
 }
 
 .section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -321,6 +318,13 @@ a {
 .title {
   display: block;
   margin-bottom: 20px;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 12px;
+  }
 }
 
 .title::after {
@@ -346,6 +350,7 @@ a {
 .header-nav--mobile {
   background-color: var(--bgc-main-nav);
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -648,18 +653,9 @@ a {
 }
 
 .services {
-  background-color: var(--color-white);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  width: 480px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .services {
-    width: 768px;
-  }
+  background-color: var(--color-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 1280px) {
@@ -669,35 +665,52 @@ a {
 }
 
 .container__services {
+  position: relative;
   background-color: var(--color-white);
   border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {
   .container__services {
-    width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container__services {
     display: flex;
-    justify-content: end;
-    padding-left: 90px;
-    padding-right: 90px;
+    justify-content: space-between;
+  }
+}
+
+.services__slogan {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .services__slogan {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .services__slogan {
+    font-size: 30px;
+    text-align: left;
   }
 }
 
 .services__wrap {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 @media screen and (min-width: 1280px) {
   .services__wrap {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 90px) / 2);
     padding-bottom: 20px;
     padding-top: 20px;
   }
@@ -705,13 +718,11 @@ a {
 
 @media screen and (min-width: 1280px) {
   .services__content {
-    flex-basis: calc((100% - 90px) / 3 * 2);
-    margin-left: 90px;
-    padding-left: 100px;
+    flex-basis: calc((100% - 90px) / 2);
   }
 }
 
-.services__item {
+.services__box {
   display: flex;
   align-items: center;
   color: var(--color-main-text);
@@ -719,29 +730,133 @@ a {
 
 .services__icon {
   fill: var(--color-icon-accent);
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .services__icon {
+    margin-right: 20px;
+  }
+}
+
+.services__text--more {
+  display: flex;
+}
+
+@media screen and (max-width: 767.98px) {
+  .services__item--more:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.services__btn--more {
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+  width: 30px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
+}
+
+@media screen and (min-width: 768px) {
+  .services__btn--more {
+    bottom: 0px;
+    right: 380px;
+    width: 40px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .services__btn--more {
+    bottom: 0;
+    right: 300px;
+    width: 40px;
+    height: 30px;
+  }
+}
+
+.icon__more-less {
+  fill: var(--color-main-text);
+  width: 17px;
+  height: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon__more-less {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .icon__more-less {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.services__content--more {
+  display: none;
+}
+
+.services__content--more.is-open {
+  display: block;
+}
+
+.icon__less {
+  display: none;
+}
+
+.is-open .icon__less {
+  display: block;
+}
+
+.is-open .icon__more {
+  display: none;
 }
 
 .container__about {
-  padding-right: 90px;
-  padding-left: 90px;
   text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .container__about {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+}
+
+.about__text {
+  margin-bottom: 0;
 }
 
 .advantages {
   background-color: var(--color-white);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  width: 1200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1280px) {
+  .advantages {
+    width: 1280px;
+  }
+}
+
 .container__advantages {
-  padding-left: 90px;
-  padding-right: 90px;
   background-color: var(--color-white);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .container__advantages {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 
 .advantages__item {
@@ -751,9 +866,16 @@ a {
 }
 
 .advantages__icon {
+  width: 20px;
+  height: 20px;
   fill: var(--color-icon-accent);
   margin-top: 10px;
   margin-right: 20px;
+}
+
+.advantages__icon use {
+  width: 20px;
+  height: 20px;
 }
 
 .container__price {
