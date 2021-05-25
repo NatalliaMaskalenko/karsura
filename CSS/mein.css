@@ -146,20 +146,21 @@ a {
   position: fixed;
   right: 30px;
   bottom: 50px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
+  text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 4px;
   border: none;
-  background-size: contain;
+  border-radius: 50%;
+  background-color: var(--color-text-title);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
 .scrolling__icon {
-  fill: var(--color-text-title);
-  border-radius: 50%;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  fill: var(--bgc-main);
 }
 
 .scrolling__link {

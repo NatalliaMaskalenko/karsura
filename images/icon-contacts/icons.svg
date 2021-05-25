@@ -39,17 +39,14 @@
 <symbol id="icon-menu_24px" viewBox="0 0 48 32">
 <path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
 </symbol>
-<symbol id="icon-iconmonstr-arrow-up-thin" viewBox="0 0 32 32">
-<path d="M14.667 2.941l-8.313 10.037-1.020-0.86 10.028-12 9.972 12-1.019 0.861-8.315-10.040v29.179h-1.333v-29.177z"></path>
-</symbol>
 <symbol id="icon-iconmonstr-arrow-right-thin" viewBox="0 0 32 32">
 <path d="M29.177 16l-10.036 8.313 0.859 1.020 12-10.028-12-9.972-0.86 1.019 10.039 8.315h-29.179v1.333h29.177z"></path>
 </symbol>
-<symbol id="icon-iconmonstr-arrow-up-thin" viewBox="0 0 32 32">
-<path d="M14.667 2.941l-8.313 10.037-1.020-0.86 10.028-12 9.972 12-1.019 0.861-8.315-10.040v29.179h-1.333v-29.177z"></path>
-</symbol>
 <symbol id="icon-iconmonstr-check-mark-11" viewBox="0 0 32 32">
 <path d="M0 15.181l1.56-1.608c2.601 0.696 7.084 2.308 11.107 4.796 4.233-5.569 12.776-12.531 17.941-15.703l1.392 1.431-18.667 25.236-13.333-14.152z"></path>
+</symbol>
+<symbol id="icon-iconmonstr-arrow-up-thin" viewBox="0 0 32 32">
+<path d="M14.667 2.941l-8.313 10.037-1.020-0.86 10.028-12 9.972 12-1.019 0.861-8.315-10.040v29.179h-1.333v-29.177z"></path>
 </symbol>
 </defs>
 </svg>
