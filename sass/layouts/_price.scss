@@ -1,10 +1,17 @@
 .container__price {
-  padding-right: 90px;
-  padding-left: 90px;
-  text-align: justify;
+   text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
 }
 
 .price__text {
   text-align: justify;
-  text-indent: 25px;
+  text-indent: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-indent: 25px;
+}
 }
