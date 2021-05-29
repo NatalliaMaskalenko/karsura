@@ -1,6 +1,6 @@
 ;(() => {
-    const menuBtnRef = document.querySelector("[services__btn--more]")
-    const mobileMenuRef = document.querySelector("[services__content--more]")
+    const menuBtnRef = document.querySelector("[data-button]")
+    const mobileMenuRef = document.querySelector("[data-text-more]")
     menuBtnRef.addEventListener("click", () => {
       const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false
       menuBtnRef.classList.toggle("is-open")

@@ -1,20 +1,3 @@
-  // $(document).ready(function(){
-   
-  //   $(window).scroll(function(){
-  //   if ($(this).scrollTop() > 100) {
-  //   $('.scrollup').fadeIn();
-  //   } else {
-  //   $('.scrollup').fadeOut();
-  //   }
-  //   });
-     
-  //   $('.scrollup').click(function(){
-  //   $("html, body").animate({ scrollTop: 0 }, 600);
-  //   return false;
-  //   });
-     
-  //   });
-
   mybutton = document.getElementById("myBtn");
 
   // Когда пользователь прокручивает вниз 20px от верхней части документа, покажите кнопку
