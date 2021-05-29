@@ -60,9 +60,10 @@
 }
 
 .main-nav__btn {
+  position: relative;
   width: 40px;
   height: 40px;
-  display: flex;
+  // display: flex;
   justify-content: space-between;
   align-items: center;
   border: none;
@@ -81,6 +82,14 @@
     fill: var(--color-text-contacts);
   }
 
+}
+
+.main-nav__icon--close{
+ position: absolute;
+ top: 5px;
+ left: 5px;
+ width: 20px;
+ height: 20px;
 }
 
 .main-nav__icon {

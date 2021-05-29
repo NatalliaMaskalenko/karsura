@@ -78,22 +78,24 @@
               <a class="main-nav__link" href="#contacts">Kontakte</a>
             </li>
           </ul>
-          <div class="mobile-menu__wrap">
-             <button class="main-nav__btn" type="button">
-            <svg class="main-nav__icon">
+          <button class="main-nav__btn" type="button" data-menu-button>
+            <svg class="main-nav__icon" width="40" hight="40">
               <use
                 class="mobile-menu--open"
                 href="./images/icon-contacts/icons.svg#icon-menu_24px"
-              ></use>
-              <use
-                class="mobile-menu--close"
-                href="./images/icon-contacts/icons.svg#icon-close_24px"
-            ></use>
+              ></use></svg>
+
+             <svg class="main-nav__icon main-nav__icon--close">
+            <use
+              class="mobile-menu--close"
+              href="./images/icon-contacts/icons.svg#icon-close-black-18dp-2-1"
+          ></svg>
+
             </svg>
-             </button>
-            <nav class="mobile-menu" >
+          </button>
+            <nav class="mobile-menu" data-menu>
               <div class="container">
-              <ul class="list main-nav" >
+              <ul class="list main-nav" data-menu-list>
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#services">Leistungen</a>
                 </li>
@@ -112,8 +114,7 @@
              </ul>
               </div>
             </nav>
-        </div>
-        </div>
+              </div>
        </div>
       <div class="contacts__wrap" id="header">
         <div class="container container__contacts">
@@ -433,13 +434,13 @@
           </p>
         </div>
       </section>
-      <div #button class="scrollup">
+      <button  class="scrollup" onclick="topFunction()" id="myBtn">
         <svg class="scrollup__icon">
           <use
           href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-up-thin"
         ></use>
         </svg>
-      </div>
+      </button>
   </main>
     <footer class="footer" id="contacts">
       <div class="container">

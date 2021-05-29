@@ -148,6 +148,7 @@ a {
   width: 35px;
   height: 35px;
   background-color: var(--color-text-contacts);
+  border: none;
   right: 10px;
   bottom: 100px;
   padding: 8px 0;
@@ -210,10 +211,10 @@ a {
 .mobile-menu {
   position: absolute;
   z-index: 300;
-  top: -700%;
+  top: -800%;
   left: 0;
   width: 100%;
-  height: 350px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -224,10 +225,21 @@ a {
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-nav__btn:hover ~ .mobile-menu,
-.main-nav__btn:focus ~ .mobile-menu {
-  top: 0%;
-  left: 0px;
+.mobile-menu.is-open {
+  top: 55px;
+  left: 0;
+}
+
+.mobile-menu--close {
+  display: none;
+}
+
+.is-open .mobile-menu--close {
+  display: block;
+}
+
+.is-open .mobile-menu--open {
+  display: none;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -408,9 +420,9 @@ a {
 }
 
 .main-nav__btn {
+  position: relative;
   width: 40px;
   height: 40px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   border: none;
@@ -430,6 +442,14 @@ a {
 .main-nav__btn:hover .main-nav__icon,
 .main-nav__btn:focus .main-nav__icon {
   fill: var(--color-text-contacts);
+}
+
+.main-nav__icon--close {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
 }
 
 .main-nav__icon {
