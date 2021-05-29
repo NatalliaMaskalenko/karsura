@@ -22,17 +22,8 @@
 
   <body>
     <header>
-      <div class="header-nav--mobile">
-        <div class="container container-mobile--header">
-          <button class="main-nav__btn" type="button" mobile-menu-open>
-            <svg class="main-nav__icon">
-              <use
-                class="icon__menu--header"
-                href="./images/icon-contacts/icons.svg#icon-menu_24px"
-              ></use>
-            </svg>
-          </button>
-
+      <div class="header-nav">
+        <div class="container container--nav">
           <ul class="list contacts--header contacts--mobile">
             <li class="contacts__item--header contacts__item--mobile">
               <a
@@ -70,12 +61,7 @@
               >
             </li>
           </ul>
-        </div>
-      </div>
-
-      <nav class="main-nav">
-        <div class="container">
-          <ul class="list main-nav__content desktop">
+          <ul class="list main-nav desktop">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#services">Leistungen</a>
             </li>
@@ -92,9 +78,43 @@
               <a class="main-nav__link" href="#contacts">Kontakte</a>
             </li>
           </ul>
+          <div class="mobile-menu__wrap">
+             <button class="main-nav__btn" type="button">
+            <svg class="main-nav__icon">
+              <use
+                class="mobile-menu--open"
+                href="./images/icon-contacts/icons.svg#icon-menu_24px"
+              ></use>
+              <use
+                class="mobile-menu--close"
+                href="./images/icon-contacts/icons.svg#icon-close_24px"
+            ></use>
+            </svg>
+             </button>
+            <nav class="mobile-menu" >
+              <div class="container">
+              <ul class="list main-nav" >
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#services">Leistungen</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#about">Über uns </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#advantages">Vorteile</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#price">Versicherungsschutz</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#contacts">Kontakte</a>
+                </li>
+             </ul>
+              </div>
+            </nav>
         </div>
-      </nav>
-
+        </div>
+       </div>
       <div class="contacts__wrap" id="header">
         <div class="container container__contacts">
           <a class="logo logo--mobile" href="./index.html"
@@ -133,33 +153,7 @@
         </div>
       </div>
     </header>
-    <div class="mobile-menu is-hidden" mobile-menu>
-      <button class="mobile-menu__btn" mobile-menu-close>
-        <svg class="mobile-menu__icon">
-          <use
-            class="mobile-menu--close"
-            href="./images/icon-contacts/icons.svg#icon-close_24px"
-          ></use>
-        </svg>
-      </button>
-      <ul class="list main-nav__content" data-menu-list>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#services">Leistungen</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#about">Über uns </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#advantages">Vorteile</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#price">Versicherungsschutz</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#contacts">Kontakte</a>
-        </li>
-      </ul>
-    </div>
+
     <main>
      <section class="hero">
         <div class="container">
@@ -497,7 +491,7 @@
               target="_blank"
               rel="noreferrer noopener"
               href="https://goo.gl/maps/AEfGCURZD6ztmuQS8"
-              >Brandschachtstr. 17 <br />
+              >Brandschachtstr. 19 <br />
               44149 Dortmund</a
             >
           </address>
@@ -514,7 +508,9 @@
         </p>
       </div>
     </footer>
-    <script src="./main.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/read-more.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
 

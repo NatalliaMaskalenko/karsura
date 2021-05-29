@@ -8,7 +8,6 @@ body {
   background-color: var(--bgc-main);
   color: var(--color-main-text);
   
-
   @media screen and (min-width: 768px) {
     font-size: 20px;
     letter-spacing: 0.03em;
@@ -18,6 +17,7 @@ body {
     font-size: 20px;
     letter-spacing: 0.03em;
   }
+  
 }
 
 .visually-hidden {
