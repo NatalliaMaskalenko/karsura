@@ -69,7 +69,7 @@
   color: var(--color-icon-accent);
 }
 
-.datenschutz{
+.datenschutz-section{
   position: relative;
 
   @media screen and (max-width: 767.98px) {
@@ -88,7 +88,7 @@
   }
 }
 
-.datenschutz::before {
+.datenschutz-section::before {
   position: absolute;
   left: 0;
   top: 40px;
@@ -109,7 +109,7 @@
   }
 }
 
-.datenschutz__list{
+.datenschutz-section__list{
     @media screen and (max-width: 1279.98px) {
     padding-top: 10px;
   }
@@ -120,7 +120,7 @@
   }
 }
 
-.datenschutz__item{
+.datenschutz-section__item{
   @extend %main-nav;
   text-transform: uppercase;
   font-weight: 400;
@@ -144,7 +144,7 @@
   }
 }
 
-.datenschutz__link{ 
+.datenschutz-section__link{ 
   color: var(--color-text-footer);
 
   &:hover,

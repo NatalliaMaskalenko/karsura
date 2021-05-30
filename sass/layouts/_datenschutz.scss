@@ -12,3 +12,39 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     left: 0;
 }
 
+.datenschutz__list{
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.datenschutz__item{
+    display: flex;
+    align-items: center;
+}
+
+.datenschutz__item:not(:last-child)::after{
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-image: url(/images/icon-contacts/iconmonstr-arrow-right-thin.svg);
+}
+
+.datenschutz__link{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--color-main-text);
+
+  &:hover,
+  &:focus{
+      color: var(--color-accent-light);
+  }
+}
