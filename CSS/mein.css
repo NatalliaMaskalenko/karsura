@@ -28,7 +28,7 @@
   color: var(--color-white);
 }
 
-.services__slogan, .advantages__slogan {
+.services__slogan, .title-impressum, .subtitle-impressum, .advantages__slogan, .title-datenschutz, .subtitle-datenschutz {
   font-style: normal;
   font-weight: 500;
   line-height: 1.1;
@@ -398,6 +398,7 @@ a {
     line-height: 1.6;
     letter-spacing: 0.02em;
     color: var(--color-white);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contacts__link--mobile:focus, .contacts__link--mobile:hover {
     color: var(--color-text-contacts);
@@ -416,6 +417,7 @@ a {
     stroke-width: 1px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 5px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -456,6 +458,7 @@ a {
   width: 30px;
   height: 30px;
   fill: var(--color-white);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__wrap {
@@ -860,6 +863,48 @@ a {
   margin-bottom: 0;
 }
 
+.title-impressum {
+  font-size: 20px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .title-impressum {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title-impressum {
+    font-size: 24px;
+  }
+}
+
+.subtitle-impressum {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle-impressum {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .subtitle-impressum {
+    font-size: 22px;
+  }
+}
+
+.text-impressum--adresse,
+.text-impressum {
+  margin-bottom: 0;
+  font-style: normal;
+}
+
 .advantages {
   background-color: var(--color-white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1023,10 +1068,54 @@ a {
   line-height: 2;
   letter-spacing: 0.03em;
   color: var(--color-main-text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .datenschutz__link:hover, .datenschutz__link:focus {
   color: var(--color-accent-light);
+}
+
+.title-datenschutz {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .title-datenschutz {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title-datenschutz {
+    font-size: 22px;
+  }
+}
+
+.subtitle-datenschutz {
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle-datenschutz {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .subtitle-datenschutz {
+    font-size: 20px;
+  }
+}
+
+.text-datenschutz {
+  margin-bottom: 0;
+  font-style: normal;
 }
 
 .footer {
@@ -1097,6 +1186,11 @@ a {
 
 .adress__link--footer {
   margin-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link--footer {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__link--footer:hover,
