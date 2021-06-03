@@ -2,9 +2,10 @@
   --color-white: #ffffff;
   --color-text-footer: #99b9d8;
   --color-light: rgb(134, 132, 132);
-  --color-main-text: #1f2c37;
+  // --color-main-text: #1f2c37;
+  --color-main-text: #1A3B69;
   --color-text-contacts: #467b9b;
-  --color-text-slogan: #001623;
+  --color-text-slogan: #1A3B69;
   --color-text-title: #467b9b;
   --color-accent-dark: #002236;
   --color-accent-dark-transparent: rgba(0, 34, 54, 0.5);
@@ -12,6 +13,9 @@
   --color-icon-accent: #2196f3;
   --bgc-main: #e5edf5;
   --bgc-main-nav: #001623;
+  --bgc-services: rgba(230, 230, 230, 0.116);
+  --bc-services: rgb(209, 206, 206);
+ 
 }
 
 %title {
@@ -33,7 +37,7 @@
   font-weight: 500;
   line-height: 1.1;
   color: var(--color-text-slogan);
-}
+  }
 
 %contacts-desktop {
   font-style: normal;

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> AUTOGLAS-REPARATUR | KV AUTOGLAS</title>
-    <meta name="description" content=" Service in Sachen Autoglas-Reparatur und Autoglas-Austausch">
+    <meta name="description" content="Service in Sachen Autoglas-Reparatur und Autoglas-Austausch">
     <link rel="shortcut icon" href="./images/Logo_KV-Autoglas-fav.jpg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -60,23 +60,35 @@
               >
             </li>
           </ul>
+
           <ul class="list main-nav desktop">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#services">Leistungen</a>
-            </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#about">Über uns </a>
             </li>
+
+            <li class="main-nav__item main-nav__item--subnav">
+              <a class="main-nav__link" href="#services">Leistungen</a>
+
+              <ul class="list subnav">
+                <li class="subnav__item"><a class="subnav__link" href="#reparaturen">Autoglas-reparaturen</a></li>
+                <li class="subnav__item"><a class="subnav__link" href="#Tuning">Chip-Tuning</a></li>
+              </ul>
+
+            </li>
+
             <li class="main-nav__item">
               <a class="main-nav__link" href="#advantages">Vorteile</a>
             </li>
+
             <li class="main-nav__item">
               <a class="main-nav__link" href="#price">Versicherungsschutz</a>
             </li>
+
             <li class="main-nav__item">
               <a class="main-nav__link" href="#contacts">Kontakte</a>
             </li>
           </ul>
+
           <button class="main-nav__btn" type="button" data-menu-button>
             <svg class="main-nav__icon" width="40">
               <use
@@ -90,29 +102,37 @@
               href="./images/icon-contacts/icons.svg#icon-close-black-18dp-2-1"></use></svg>
 
           </button>
+
             <nav class="mobile-menu" data-menu>
               <div class="container">
+
               <ul class="list main-nav" data-menu-list>
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#services">Leistungen</a>
                 </li>
+
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#about">Über uns </a>
                 </li>
+
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#advantages">Vorteile</a>
                 </li>
+
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#price">Versicherungsschutz</a>
                 </li>
+
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#contacts">Kontakte</a>
                 </li>
              </ul>
+
               </div>
             </nav>
-              </div>
+          </div>
        </div>
+
       <div class="contacts__wrap" id="header">
         <div class="container container__contacts">
           <a class="logo logo--mobile" href="./index.html"
@@ -196,18 +216,23 @@
         <div class="container container__services">
           <div class="services__wrap">
             <h2 class="title">Leistungen</h2>
-            <p class="services__slogan">
+            <!-- <p class="services__slogan">
               Unser Service erbringt folgende Dienstleistungen
-            </p>
+            </p> -->
           </div>
-          <ul class="list services__content">
+
+          <div class="services__list">
+            <div class="services__inner" id="reparaturen">
+             <h3 class="services__subtitle">Autoglas-Reparatur <br> und Autoglas-Austausch</h3>
+
+             <ul class="list services__content">
             <li class="services__item">
               <span class="services__box"> <svg class="services__icon" width="20" height="20">
                 <use
                   href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
                 ></use>
               </svg>
-              Versicherungsschadenabwicklung</span>
+               Versicherungsschadenabwicklung</span>
                          </li>
             <li class="services__item">
                <span class="services__box"><svg class="services__icon" width="20" height="20">
@@ -248,90 +273,145 @@
                 ></use>
               </svg>
               Hol- & Bringservice</span>
-             
             </li>
-               <li class="services__item">
-                  <span class="services__box"><svg class="services__icon" width="20" height="20">
+             </ul>
+
+           </div>
+
+           <div class="services__inner" id="Tuning">
+             <h3 class="services__subtitle">Chip-Tuning</h3>
+
+             <ul class="list services__content--more">
+          <li class="services__item">
+            <span class="services__icon--more">	
+              <svg class="services__icon" width="20" height="20">
                 <use
                   href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
                 ></use>
               </svg>
-             Erhöhung der Leistung </span>
-              <ul class="list services__content--more" data-text-more>
-                <li class="services__item--more">
-                  <span class="services__icon--more">	
-                      &#8211;</span> 
-            	    Erhöhung des Drehmoments
-                </li>
-                <li class="services__item--more">
-                 <span class="services__icon--more">	
-                     &#8211;</span>
-                Senkung des Kraftstoffverbrauchs
-                     
-                </li>
-                <li class="services__item--more">
-                 <span class="services__icon--more">	
-                     &#8211;</span> 
-                     Sichere Steigerung der Motorparameter ohne Überlastung der Motorelemente
-               </li>
-               <li class="services__item--more">
-                <span class="services__icon--more">	
-                     &#8211;</span> 
-                     ECO Tuning
-               </li>
-               <li class="services__item--more">
-                <span class="services__icon--more">	
-                     &#8211;</span> 
-                     Vmax Deaktivierung
-               </li>
-               <li class="services__item--more">
-                <span class="services__icon--more">	
-                     &#8211;</span> 
-                     Kennfeld Korrekturen
-               </li>
-               <li class="services__item--more">
-                <span class="services__icon--more">	
-                     &#8211;</span> 
-                     Schubabschaltung, Pop and Bang, Anti Lag
-               </li>
-               <li class="services__item--more">
-                <span class="services__icon--more">	
-                     &#8211;</span> 
-                     DPF
-               </li>
-               <li class="services__item--more">
-                <span class="services__icon--more">	
-                     &#8211;</span> 
-                     AGR
-               </li>
-               <li class="services__item--more">
-                <span class="services__icon--more">	
-                     &#8211;</span> 
-                     Wegfahrsperre
-               </li>
-                <li class="services__item--more">
-                 <span class="services__icon--more">	
-                     &#8211;</span> 
-                     Rückrüstung ist jederzeit möglich
-               </li>
-               <li class="services__item--more">
-                <span class="services__icon--more">	
-                     &#8211;</span> 
-                     Individuelle Anpassung 
-               </li>
-              </ul> 
-              <button type="button" class="services__btn--more" data-button> 
-                <svg class="icon__more-less">
-                   <use class="icon__more"
-                  href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-right-thin"
-                ></use>
-                 <use class="icon__less"
-                  href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-up-thin"
-                 ></use>
-              </svg>
-            </button>
-           </li>
-        </ul>
+             Erhöhung des Drehmoments</span> 
+          </li>
+          <li class="services__item">
+           <span class="services__icon--more">	
+            <svg class="services__icon" width="20" height="20">
+              <use
+                href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+              ></use>
+            </svg>
+          Senkung des Kraftstoffverbrauchs
+           </span>
+          </li>
+        
+         <li class="services__item">
+          <span class="services__icon--more">	
+            <svg class="services__icon" width="20" height="20">
+              <use
+                href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+              ></use>
+            </svg>
+               ECO Tuning
+              </span> 
+         </li>
+         <li class="services__item">
+          <span class="services__icon--more">	
+            <svg class="services__icon" width="20" height="20">
+              <use
+                href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+              ></use>
+            </svg>
+               Vmax Deaktivierung
+           </span> 
+         </li>
+         <li class="services__item">
+          <span class="services__icon--more">	
+            <svg class="services__icon" width="20" height="20">
+              <use
+                href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+              ></use>
+            </svg>
+               Kennfeld Korrekturen
+          </span> 
+         </li>
+            
+         <li class="services__item">
+          <span class="services__icon--more">	
+            <svg class="services__icon" width="20" height="20">
+              <use
+                href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+              ></use>
+            </svg>
+               AGR
+          </span>     
+         </li>
+         <li class="services__item">
+          <span class="services__icon--more">	
+            <svg class="services__icon" width="20" height="20">
+              <use
+                href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+              ></use>
+            </svg>
+               Wegfahrsperre
+          </span>      
+         </li>
+
+         <li class="services__item">
+           <span class="services__icon--more">	
+            <svg class="services__icon" width="20" height="20">
+              <use
+                href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+              ></use>
+            </svg>
+               Rückrüstung ist jederzeit möglich
+          </span>     
+         </li>
+
+         <li class="services__item">
+          <span class="services__icon--more">	
+            <svg class="services__icon" width="20" height="20">
+              <use
+                href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+              ></use>
+            </svg> 
+               DPF
+            </span>
+         </li>
+
+         <li class="services__item">
+          <span class="services__icon--more">	
+            <svg class="services__icon" width="20" height="20">
+              <use
+                href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+              ></use>
+            </svg>
+               Individuelle Anpassung 
+         </span>       
+         </li>
+
+         <li class="services__item">
+          <span class="services__icon--more">	
+            <svg class="services__icon" width="20" height="20">
+              <use
+                href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+              ></use>
+            </svg>
+               Schubabschaltung, Pop and Bang, Anti Lag
+          </span> 
+         </li>
+
+         <li class="services__item">
+          <span class="services__icon--more">	
+           <svg class="services__icon" width="20" height="20">
+             <use
+               href="./images/icon-contacts/icons.svg#icon-iconmonstr-arrow-17"
+             ></use>
+           </svg>
+              Sichere Steigerung der Motorparameter ohne Überlastung der Motorelemente
+             </span> 
+        </li>
+     
+             </ul> 
+             </div>
+        </div>
         </div>
       </section>
     <!-- О компании -->
@@ -350,6 +430,7 @@
       </section>
     <!-- Приемущества -->
    <section class="section advantages" id="advantages">
+     </div>
         <div class="container container__advantages">
           <h2 class="title">Vorteile</h2>
           <p class="advantages__slogan">Alle Vorteile auf einen Blick!</p>
@@ -506,7 +587,7 @@
        </div>
     </footer>
     <script src="./js/scroll.js"></script>
-    <script src="./js/read-more.js"></script>
+    <!-- <script src="./js/read-more.js"></script> -->
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
